@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value to the number is perfect square or not");
+        int n = sc.nextInt();
+        int val = square(n);
+        System.out.println("The floor value is "+val);
+        
+    }
+    
+    public static int square(int n)
+    {
+        int i=1;
+        for(;i*i <= n;i++)
+        {
+            if(i*i == n)
+            {
+            System.out.println("The Number "+n+" is a perfect Square");
+            return i;
+            }
+        }
+        System.out.println("The Number "+n+" is not a perfect Square ");
+        return i-1; 
+        
+    }
+}
